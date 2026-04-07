@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Amyas Aouane — Contact</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Sora:wght@300;400;600&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0d0d0e;
+    --surface: #161618;
+    --border: rgba(255,255,255,0.07);
+    --border-hover: rgba(255,255,255,0.18);
+    --text: #f0ede8;
+    --muted: #888680;
+    --accent: #c9a96e;
+    --accent-dim: rgba(201,169,110,0.12);
+    --radius: 14px;
+  }
+
+  html, body {
+    min-height: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Sora', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.25rem;
+  }
+
+  .wrapper {
+    width: 100%;
+    max-width: 420px;
+    animation: fadeUp 0.5s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--accent-dim);
+    border: 1.5px solid var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--accent);
+    margin: 0 auto 1.25rem;
+    letter-spacing: 0.02em;
+  }
+
+  h1 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--text);
+    margin-bottom: 0.35rem;
+  }
+
+  .subtitle {
+    font-size: 0.78rem;
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.04em;
+    line-height: 1.6;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 1.1rem 1.1rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.18s, background 0.18s, transform 0.15s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    background: var(--accent-dim);
+    transition: opacity 0.18s;
+  }
+
+  .btn:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
+  }
+
+  .btn:hover::before { opacity: 1; }
+  .btn:active { transform: translateY(0); }
+
+  .btn-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .btn-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .btn-label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 0.01em;
+    position: relative;
+  }
+
+  .btn-sub {
+    font-size: 0.72rem;
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    position: relative;
+    line-height: 1.5;
+  }
+
+  .btn-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    position: relative;
+  }
+
+  .tag {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 0.65rem;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.05em;
+    background: var(--accent-dim);
+    color: var(--accent);
+    position: relative;
+  }
+
+  .footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.7rem;
+    font-family: 'DM Mono', monospace;
+    color: var(--muted);
+    letter-spacing: 0.03em;
+  }
+
+  .divider {
+    width: 32px;
+    height: 1px;
+    background: var(--border);
+    margin: 1rem auto;
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <div class="avatar">AA</div>
+    <h1>Amyas Aouane</h1>
+    <p class="subtitle">Élève ingénieur · Data & IA<br>Recherche alternance Sept. 2026</p>
+  </div>
+
+  <div class="grid">
+
+    <a class="btn" href="https://www.linkedin.com/in/amyas-aouane-b364a1327/" target="_blank" rel="noopener">
+      <div class="btn-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" rx="4" fill="#0A66C2"/>
+          <path d="M7 9.5H5V19H7V9.5ZM6 8.5C6.69 8.5 7.25 7.94 7.25 7.25C7.25 6.56 6.69 6 6 6C5.31 6 4.75 6.56 4.75 7.25C4.75 7.94 5.31 8.5 6 8.5ZM19 19H17V14.25C17 12.6 15.9 12 14.9 12C13.9 12 13 12.75 13 14.25V19H11V9.5H13V10.75C13.5 9.75 14.6 9.25 15.5 9.25C17.5 9.25 19 10.75 19 14.25V19Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="btn-text">
+        <span class="btn-label">LinkedIn</span>
+        <span class="btn-sub">Profil complet</span>
+        <span class="tag">voir profil →</span>
+      </div>
+    </a>
+
+    <a class="btn" href="https://github.com/amyas13" target="_blank" rel="noopener">
+      <div class="btn-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" rx="4" fill="#24292e"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5C8.13 5 5 8.13 5 12C5 15.13 7.06 17.75 9.88 18.72C10.23 18.78 10.35 18.57 10.35 18.38V17.16C8.47 17.57 8.06 16.36 8.06 16.36C7.74 15.51 7.27 15.28 7.27 15.28C6.62 14.85 7.32 14.86 7.32 14.86C8.03 14.91 8.4 15.59 8.4 15.59C9.04 16.72 10.08 16.4 10.38 16.19C10.44 15.74 10.62 15.43 10.82 15.25C9.34 15.07 7.78 14.49 7.78 11.93C7.78 11.13 8.07 10.48 8.42 9.97C8.36 9.79 8.1 9.04 8.5 8.03C8.5 8.03 9.09 7.84 10.35 8.79C10.88 8.63 11.44 8.55 12 8.55C12.56 8.55 13.12 8.63 13.65 8.79C14.91 7.84 15.5 8.03 15.5 8.03C15.9 9.04 15.64 9.79 15.58 9.97C15.93 10.48 16.22 11.13 16.22 11.93C16.22 14.5 14.66 15.07 13.17 15.25C13.43 15.47 13.65 15.91 13.65 16.58V18.38C13.65 18.57 13.77 18.79 14.13 18.72C16.94 17.75 19 15.13 19 12C19 8.13 15.87 5 12 5Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="btn-text">
+        <span class="btn-label">GitHub</span>
+        <span class="btn-sub">Projets & code</span>
+        <span class="tag">amyas13 →</span>
+      </div>
+    </a>
+
+    <a class="btn" href="mailto:amyasaouane1@gmail.com?subject=Alternance%20Data%20%26%20IA%20%E2%80%94%20Prise%20de%20contact">
+      <div class="btn-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" rx="4" fill="#EA4335"/>
+          <path d="M19 7H5C4.45 7 4 7.45 4 8V16C4 16.55 4.45 17 5 17H19C19.55 17 20 16.55 20 16V8C20 7.45 19.55 7 19 7ZM18 9L12 12.88L6 9H18ZM6 15V10.5L12 14.38L18 10.5V15H6Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="btn-text">
+        <span class="btn-label">Email</span>
+        <span class="btn-sub">Envoyer un mail</span>
+        <span class="tag">composer →</span>
+      </div>
+    </a>
+
+    <a class="btn" href="tel:+33695468414">
+      <div class="btn-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" rx="4" fill="#34A853"/>
+          <path d="M9.37 10.89C10.13 12.41 11.6 13.87 13.12 14.64L14.28 13.48C14.42 13.34 14.63 13.29 14.82 13.36C15.44 13.57 16.11 13.68 16.8 13.68C17.12 13.68 17.38 13.94 17.38 14.26V16.81C17.38 17.13 17.12 17.39 16.8 17.39C10.61 17.39 5.62 12.4 5.62 6.21C5.62 5.89 5.88 5.63 6.2 5.63H8.76C9.08 5.63 9.34 5.89 9.34 6.21C9.34 6.91 9.45 7.57 9.66 8.19C9.72 8.38 9.68 8.59 9.53 8.74L8.37 9.9C8.67 10.24 9.01 10.57 9.37 10.89Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="btn-text">
+        <span class="btn-label">Téléphone</span>
+        <span class="btn-sub">Appeler directement</span>
+        <span class="tag">composer →</span>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="footer">
+    <div class="divider"></div>
+    ESEO Paris · Alternance dès sept. 2026
+  </div>
+</div>
+</body>
+</html>
